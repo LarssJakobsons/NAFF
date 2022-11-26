@@ -193,7 +193,7 @@ When responding to a component you need to satisfy discord either by responding 
 
     @listen()
     async def on_component(event: Component):
-        ctx = event.context
+        ctx = event.ctx
 
         match ctx.custom_id:
             case "my_button_id":
